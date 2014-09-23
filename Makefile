@@ -44,7 +44,7 @@ hevea:	book.tex header.html footer.html
 DEST = /home/downey/public_html/greent/thinkpython
 
 epub:	hevea
-	cd html; ebook-convert index.html thinkpython.epub
+	ebook-convert html/index.html thinkpython.epub --author-sort=Downey --authors="Allen B. Downey" --book-producer="Green Tea Press" --cover=cover.png --title="Think Python" --language=en
 
 distrib:
 	rm -rf dist
