@@ -163,3 +163,13 @@ sympy-plots-for-*.tex/
 # xindy
 *.xdy
 
+### Think Python ###
+header.html
+footer.html
+*.epub
+*.haux
+*.hind
+*.htoc
+*.image.tex
+thinkpython.tex
+html
