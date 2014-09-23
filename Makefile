@@ -16,6 +16,9 @@ PDFFLAGS = -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress \
 %.pdf: %.ps
 	ps2pdf $(PDFFLAGS) $<
 
+%.html:
+	touch $@
+
 all:	book.tex
 	makeindex book
 	pdflatex book
@@ -32,7 +35,7 @@ hevea:	book.tex header.html footer.html
 # the following greps are a kludge to prevent imagen from seeing
 # the definitions in latexonly, and to avoid headers on the images
 	grep -v latexonly thinkpython.image.tex > a; mv a thinkpython.image.tex
-	grep -v fancyhdr thinkpython.image.tex > a; mv a thinkpython.image.tex
+	sed s/\\\\usepackage{fancyhdr}//g thinkpython.image.tex > a; mv a thinkpython.image.tex
 	imagen -png thinkpython
 	hacha thinkpython.html
 	cp up.png next.png back.png html
@@ -40,7 +43,7 @@ hevea:	book.tex header.html footer.html
 
 DEST = /home/downey/public_html/greent/thinkpython
 
-epub:
+epub:	hevea
 	cd html; ebook-convert index.html thinkpython.epub
 
 distrib:
