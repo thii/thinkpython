@@ -18,7 +18,7 @@ The following commands have to be installed:
 
 `sed` and `grep` are preinstalled on OSX.
 
-You can install `latex` from [MaxTex](http://www.tug.org/mactex/). `pdftops` (from `poppler` package), `hevea` and `hacha` (included in `hevea` package) can be installed using Homebrew:
+You can install `latex` from [MacTex](http://www.tug.org/mactex/). `pdftops` (from `poppler` package), `hevea` and `hacha` (included in `hevea` package) can be installed using Homebrew:
 ```shell
 $ brew update
 $ brew install poppler
