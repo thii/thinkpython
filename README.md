@@ -45,6 +45,8 @@ $ make epub
 
 `thinkpython.epub` will be generated in the project's root directory.
 
+Precompiled ebook in EPUB format can be downloaded [here](https://github.com/thii/thinkpython/releases/download/v2.0.13/thinkpython.epub).
+
 ## License
 
 [Creative Commons Attribution-NonCommercial 3.0 Unported License](http://creativecommons.org/licenses/by-nc/3.0/)
