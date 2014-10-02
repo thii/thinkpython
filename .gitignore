@@ -167,6 +167,7 @@ sympy-plots-for-*.tex/
 header.html
 footer.html
 *.epub
+*.mobi
 *.haux
 *.hind
 *.htoc
