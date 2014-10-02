@@ -37,15 +37,18 @@ $ export PATH=$HOME/bin:$PATH >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
-### Making EPUB
+### Making EPUB & MOBI
 ```shell
 $ cd thinkpython
 $ make epub
+$ make mobi
 ```
 
-`thinkpython.epub` will be generated in the project's root directory.
+`thinkpython.epub` and `thinkpython.mobi` will be generated in the project's root directory.
 
-Precompiled ebook in EPUB format can be downloaded [here](https://github.com/thii/thinkpython/releases/download/v2.0.13/thinkpython.epub).
+Precompiled ebook in EPUB and MOBI format can be downloaded from the following URLs:
+- [thinkpython.epub](https://github.com/thii/thinkpython/releases/download/v2.0.13/thinkpython.epub)
+- [thinkpython.mobi](https://github.com/thii/thinkpython/releases/download/v2.0.13/thinkpython.mobi)
 
 ## License
 
